@@ -55,6 +55,7 @@ class Filter:
     def __init__(self):
         self.file_handler = False
         self.valves = self.Valves()
+        self.toggle = True
         self.patterns = {
             "email": re.compile(r"\b[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Z|a-z]{2,}\b"),
             "phone": re.compile(r"\b\d{3}[-.]?\d{3}[-.]?\d{4}\b"),
